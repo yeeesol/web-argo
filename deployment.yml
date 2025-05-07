@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: argo-con
-        image: yeso1/web-argo:1
+        image: yeso1/web-argo:2
