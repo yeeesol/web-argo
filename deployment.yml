@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web-dep
+  name: argo-dep
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: argo
   template:
     metadata:
-      name: nginx-pod
+      name: argo-pod
       labels:
-        app: nginx
+        app: argo
     spec:
       containers:
-      - name: nginx-con
+      - name: argo-con
         image: yeso1/web-argo:1
